@@ -36,7 +36,7 @@ function Report({ item, fetchLostItems, fetchFoundItems }) {
     };
 
     try {
-      const res = await fetch("http://localhost:8081/api/items", {
+      const res = await fetch(`${React_App_BACKENDURL}/api/items`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newItem),
