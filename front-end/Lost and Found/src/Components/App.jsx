@@ -41,7 +41,7 @@ export default function App() {
 
   //////////////
   const fetchLostItems = () => {
-    fetch(`${React_App_BACKENDURL}/api/lost`)
+    fetch(`${Vite_BACKENDURL}/api/lost`)
       .then((res) => res.json())
       .then((data) => {
         // map all items to include default image
@@ -55,7 +55,7 @@ export default function App() {
   };
 
   const fetchFoundItems = () => {
-    fetch(`${React_App_BACKENDURL}/api/found`)
+    fetch(`${Vite_BACKENDURL}/api/found`)
       .then((res) => res.json())
       .then((data) => {
         const itemsWithDefaultImage = data.map((item) => ({
