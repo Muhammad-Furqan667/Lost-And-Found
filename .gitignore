@@ -1,0 +1,22 @@
+# Environment
+.env
+config.env
+.env.local
+.env.production
+.env.development
+
+# Node & frontend modules
+node_modules/
+front-end/node_modules/
+
+# Build outputs
+front-end/dist/
+front-end/build/
+
+# Editor/system files
+.vscode/
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
